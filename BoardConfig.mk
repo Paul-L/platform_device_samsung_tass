@@ -29,8 +29,8 @@ TARGET_OTA_ASSERT_DEVICE := gio,GT-S5660
 ## Recovery
 BOARD_LDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
-TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/tass/recovery/recovery_kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/gio/recovery/recovery_kernel
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/tass/recovery/recovery_ui.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/tass/recovery/graphics.c
-TARGET_RECOVERY_INITRC := device/samsung/tass/recovery/recovery.rc
-TARGET_RECOVERY_FSTAB := device/samsung/tass/recovery/recovery.fstab
+BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/gio/recovery/graphics.c
+TARGET_RECOVERY_INITRC := device/samsung/gio/recovery/recovery.rc
+TARGET_RECOVERY_FSTAB := device/samsung/gio/recovery/recovery.fstab
