@@ -13,20 +13,9 @@
 # limitations under the License.
 
 ## Inherit vendor proprietary files
-$(call inherit-product, vendor/samsung/gio/gio-vendor.mk)
+$(call inherit-product, vendor/samsung/gio/vendor_blob.mk)
 
 include device/samsung/msm7x27-common/common.mk
-
-DEVICE_PACKAGE_OVERLAYS := device/samsung/gio/overlay
-
-## Audio
-PRODUCT_PACKAGES += \
-    audio.primary.gio \
-    audio_policy.gio
-
-## Camera
-PRODUCT_PACKAGES += \
-    camera.gio
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
