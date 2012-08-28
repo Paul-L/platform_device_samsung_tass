@@ -13,7 +13,7 @@
 # limitations under the License.
 
 ## Inherit vendor proprietary files
-$(call inherit-product, vendor/samsung/tass/tass-vendor.mk)
+$(call inherit-product, vendor/samsung/gio/gio-vendor.mk)
 
 include device/samsung/msm7x27-common/common.mk
 
