@@ -17,6 +17,15 @@ $(call inherit-product, vendor/samsung/gio/vendor_blobs.mk)
 
 include device/samsung/msm7x27-common/common.mk
 
+## Audio
+PRODUCT_PACKAGES += \
+    audio.primary.gio \
+    audio_policy.gio
+
+## Camera
+PRODUCT_PACKAGES += \
+    camera.gio
+
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/init.gt-s5660board.rc:root/init.gt-s5660board.rc \
