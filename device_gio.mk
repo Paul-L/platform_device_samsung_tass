@@ -18,7 +18,7 @@ $(call inherit-product, vendor/samsung/gio/vendor_blobs.mk)
 include device/samsung/msm7x27-common/common.mk
 
 ## Device specific overlay
-DEVICE_PACKAGE_OVERLAYS := device/samsung/tass/overlay
+DEVICE_PACKAGE_OVERLAYS := device/samsung/gio/overlay
 
 ## Audio
 PRODUCT_PACKAGES += \
