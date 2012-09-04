@@ -35,4 +35,4 @@ PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/ueventd.gt-s5660board.rc:root/ueventd.gt-s5660board.rc
 
 ## LDPI assets
-PRODUCT_AAPT_PREF_CONFIG := ldpi
+PRODUCT_AAPT_PREF_CONFIG := mdpi
