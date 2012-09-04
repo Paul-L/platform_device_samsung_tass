@@ -19,7 +19,7 @@
          This is the default value. -->
     <int name="defaultMMSMessagesPerThread">50</int>
 
-    <!-- Giomum value for the number of messages kept per conversation. The user can never
+    <!-- Minimum value for the number of messages kept per conversation. The user can never
          set the limit below this value. -->
     <int name="minMessageCountPerThread">10</int>
 
