@@ -1,7 +1,7 @@
 # mount point	fstype		device			[device2]
 
 /boot	        bml	        boot	
-/recovery	bml	        recoveryonly	
+/recovery	bml	        recovery	
 /cache	        ext4	        /dev/block/stl14	
 /data	        ext4	        /dev/block/stl13	
 /system	        ext4	        /dev/block/stl12	

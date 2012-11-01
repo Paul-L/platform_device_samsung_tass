@@ -33,3 +33,4 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/gio/recovery/recovery_u
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/gio/recovery/graphics.c
 TARGET_RECOVERY_INITRC := device/samsung/gio/recovery/recovery.rc
 TARGET_RECOVERY_FSTAB := device/samsung/gio/recovery/recovery.fstab
+TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/gio/recovery/recovery_kernel
