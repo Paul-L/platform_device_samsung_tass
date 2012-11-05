@@ -27,7 +27,7 @@ debug.hwui.render_dirty_regions=false
 #view.fading_edge_length=8
 #view.touch_slop=15
 #view.minimum_fling_velocity=25
-#ro.max.fling_velocity=4000
+ro.max.fling_velocity=4000
 #view.scroll_friction=0.008
 
 ## RIL, telephony
