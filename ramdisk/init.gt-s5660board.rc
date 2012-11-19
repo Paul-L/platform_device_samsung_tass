@@ -108,10 +108,6 @@ on boot
     chmod 0664 /sys/devices/virtual/touch/firmware/firmware
     chown system radio /sys/devices/virtual/touch/firmware/firmware_ret
 
-# KSM
-    chown sytem system /sys/kernel/mm/ksm/run
-    chmod 666 /sys/kernel/mm/ksm/run
-
 # For qmuxd socket
     mkdir /data/radio 0770 radio radio
     chown radio radio 0770 /data/radio
