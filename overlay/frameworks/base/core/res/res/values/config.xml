@@ -56,5 +56,7 @@
 
     <!-- The default iface on which to monitor data use -->
     <string name="config_datause_iface">pdp0</string>
+    
+    <string name="config_legacyUmsLunFile">/sys/devices/platform/usb_mass_storage/lun0/file</string>
 
 </resources>
