@@ -22,3 +22,5 @@
 
 
 add_lunch_combo full_gio-eng
+add_lunch_combo full_gio-userdebug
+add_lunch_combo full_gio-debug
