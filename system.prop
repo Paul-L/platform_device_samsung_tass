@@ -1,0 +1,5 @@
+#
+# system.prop for GT-S5660
+#
+rild.libpath=/system/lib/libsec-ril.so
+rild.libargs=-d /dev/smd0
