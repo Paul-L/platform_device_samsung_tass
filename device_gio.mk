@@ -40,5 +40,8 @@ PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/ueventd.gt-s5660board.rc:root/ueventd.gt-s5660board.rc \
     device/samsung/gio/ramdisk/GIO.rle:root/GIO.rle
 
+#We do call Camera app because it won't be built instead
+PRODUCT_PACKAGES += Camera
+
 ## LDPI assets
 PRODUCT_AAPT_PREF_CONFIG := mdpi
