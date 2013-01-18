@@ -29,10 +29,6 @@ PRODUCT_PACKAGES += \
    audio.primary.gio \
    audio_policy.gio
 
-## Lights
-#PRODUCT_PACKAGES += \
-#   lights.gio
-
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/init.gt-s5660board.rc:root/init.gt-s5660board.rc \
