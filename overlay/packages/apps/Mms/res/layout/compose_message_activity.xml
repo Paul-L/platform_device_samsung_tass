@@ -145,7 +145,7 @@
                     android:minHeight="@dimen/input_text_height"
                     android:maxLines="3"
                     android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
-                    android:imeOptions="actionSend"
+                    android:imeOptions="normal"
                 />
 
                 <LinearLayout
