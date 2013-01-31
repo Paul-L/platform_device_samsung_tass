@@ -1,18 +1,18 @@
 /*
-* Copyright (C) 2009 The Android Open Source Project
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-* http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
+ * Copyright (C) 2009 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 #define LOG_TAG "AudioPolicyManager"
 //#define LOG_NDEBUG 0
@@ -31,7 +31,7 @@ namespace android {
 // Common audio policy manager code is implemented in AudioPolicyManagerBase class
 // ----------------------------------------------------------------------------
 
-// --- class factory
+// ---  class factory
 
 
 extern "C" AudioPolicyInterface* createAudioPolicyManager(AudioPolicyClientInterface *clientInterface)
@@ -235,33 +235,35 @@ status_t AudioPolicyManager::checkAndSetVolume(int stream, int index, audio_io_h
     // when the output device is the speaker it's necessary to apply an extra volume attenuation (default 6dB) to prevent audio distortion
     if (device == AudioSystem::DEVICE_OUT_SPEAKER) {
         char speakerBuf[PROPERTY_VALUE_MAX];
-        property_get("persist.sys.speaker-attn", speakerBuf, "6");
+        property_get("persist.sys.speaker-attn", speakerBuf, "0");
         LOGI("setStreamVolume() attenuation [%s]", speakerBuf);
         float volumeFactor = pow(10.0, -atof(speakerBuf)/20.0);
         LOGV("setStreamVolume() applied volume factor %f to device %d", volumeFactor, device);
         volume *= volumeFactor;
     }
 
-    // apply optional volume attenuation (default 6dB) to headset/headphone
+    // apply optional volume attenuation (default 0dB) to headset/headphone
     if (device == AudioSystem::DEVICE_OUT_WIRED_HEADSET ||
         device == AudioSystem::DEVICE_OUT_WIRED_HEADPHONE) {
         char headsetBuf[PROPERTY_VALUE_MAX];
-        property_get("persist.sys.headset-attn", headsetBuf, "6");
+        property_get("persist.sys.headset-attn", headsetBuf, "0");
         LOGI("setStreamVolume() attenuation [%s]", headsetBuf);
         float volumeFactor = pow(10.0, -atof(headsetBuf)/20.0);
         LOGV("setStreamVolume() applied volume factor %f to device %d", volumeFactor, device);
         volume *= volumeFactor;
     }
 
-    // apply optional volume attenuation (default 6dB) to FM audio
+#ifdef HAVE_FM_RADIO
+    // apply optional volume attenuation (default 0dB) to FM audio
     if (stream == AudioSystem::FM) {
         char fmBuf[PROPERTY_VALUE_MAX];
-        property_get("persist.sys.fm-attn", fmBuf, "6");
+        property_get("persist.sys.fm-attn", fmBuf, "0");
         LOGI("setStreamVolume() attenuation [%s]", fmBuf);
         float volumeFactor = pow(10.0, -atof(fmBuf)/20.0);
         LOGV("setStreamVolume() applied volume factor %f to device %d", volumeFactor, device);
         volume *= volumeFactor;
     }
+#endif
 
     // We actually change the volume if:
     // - the float value returned by computeVolume() changed

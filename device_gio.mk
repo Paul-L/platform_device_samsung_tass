@@ -210,10 +210,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=160 \
     qemu.sf.lcd_density=160
 
-# This should fix camera
-# 2nd time -> camera preview is wrong but is kernel related
+# Camera fix
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.device.screenrotation=0
+    ro.device.screenrotation=270
 
 # Location settings + Performance (check in CMSettings)
 PRODUCT_PROPERTY_OVERRIDES += \

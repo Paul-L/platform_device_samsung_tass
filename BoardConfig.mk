@@ -67,7 +67,7 @@ ENABLE_JSC_JIT := true
 JS_ENGINE := v8
 BOARD_USE_SCREENCAP:= true
 
-#Old stringTARGET_KERNEL_SOURCE := kernel/samsung/msm7x27
+#Old string ->TARGET_KERNEL_SOURCE := kernel/samsung/msm7x27
 #BOARD_MOBILEDATA_INTERFACE_NAME:= "pdp0"
 #New one -> thanks phiexz
 #Now have to test

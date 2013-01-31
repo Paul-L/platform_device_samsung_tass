@@ -1,7 +1,8 @@
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),gio)
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES:= \
+LOCAL_SRC_FILES:=               \
     AudioPolicyManager.cpp
 
 LOCAL_SHARED_LIBRARIES := \
@@ -48,3 +49,4 @@ ifeq ($(BOARD_HAVE_BLUETOOTH),true)
 endif
 
 include $(BUILD_SHARED_LIBRARY)
+endif
