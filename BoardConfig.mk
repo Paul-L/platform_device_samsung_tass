@@ -21,7 +21,9 @@ include device/samsung/msm7x27-common/BoardConfigCommon.mk
 
 ## Kernel, bootloader
 TARGET_BOOTLOADER_BOARD_NAME := gio
-TARGET_KERNEL_CONFIG := cyanogenmod_gio_defconfig
+LOCAL_KERNEL := device/samsung/gio/kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
 
 ## Assert
 TARGET_OTA_ASSERT_DEVICE := gio,GT-S5660
