@@ -89,15 +89,5 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>30</item>
     </integer-array>
-    
-    <!-- Tablet mode -->
-    <bool name="cm_default_is_tablet">true</bool>
-    <bool name="cm_default_has_soft_buttons">true</bool>
-    <bool name="cm_default_soft_buttons_left">true</bool>
-    <bool name="cm_default_show_soft_home">false</bool>
-    <bool name="cm_default_show_soft_menu">false</bool>
-    <bool name="cm_default_show_soft_back">false</bool>
-    <bool name="cm_default_show_soft_search">false</bool>
-    <bool name="cm_default_show_soft_quick_na">false</bool>
-    <integer name="cm_default_unhide_button_index">0</integer>
+
 </resources>
