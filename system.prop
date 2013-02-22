@@ -19,14 +19,14 @@ debug.qctwa.statusbar=1
 debug.qctwa.preservebuf=1
 com.qc.hardware=true
 
-## View configuration for QVGA.
+## QVGA (View configuration)
 view.fading_edge_length=8
 view.touch_slop=15
 view.minimum_fling_velocity=25
 ro.max.fling_velocity=4000
 view.scroll_friction=0.008
 
-# RIL, telephony
+## RIL, telephony
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
 ro.telephony.default_network=0
@@ -39,7 +39,7 @@ ro.telephony.call_ring.delay=0
 ro.ril.disable.power.collapse=0
 DEVICE_PROVISIONED=1
 
-## A-GPS fix by Mardon
+## A-GPS
 ro.ril.def.agps.mode=2
 ro.ril.def.agps.feature=1
 
