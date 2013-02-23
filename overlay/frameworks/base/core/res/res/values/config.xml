@@ -59,10 +59,10 @@
 
 
     <!-- Boolean indicating whether Softap rely only on one interface -->
-<!--	<bool name="config_wifi_ap_use_single_interface">true</bool>	-->
+    <bool name="config_wifi_ap_use_single_interface">true</bool>
 
     <!-- Boolean indicating whether Softap require reloading AP firware -->
-<!--	<bool name="config_wifi_ap_firmware_reload">false</bool>	-->
+    <bool name="config_wifi_ap_firmware_reload">false</bool>
 
     <bool name="config_automatic_brightness_available">false</bool>
 
