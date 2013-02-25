@@ -129,12 +129,13 @@ PRODUCT_COPY_FILES += \
     device/samsung/gio/prebuilt/system/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
     device/samsung/gio/prebuilt/system/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
     device/samsung/gio/prebuilt/system/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
-    device/samsung/gio/prebuilt/system/lib/modules/ramzswap.ko:system/lib/modules/ramzswap.ko \
-    device/samsung/gio/prebuilt/system/lib/modules/tun.ko:system/lib/modules/tun.ko \
     device/samsung/gio/prebuilt/system/lib/libgsl.so:system/lib/libgsl.so \
     device/samsung/gio/prebuilt/system/lib/libril.so:system/lib/libril.so \
     device/samsung/gio/prebuilt/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    device/samsung/gio/prebuilt/system/lib/libsecril-client.so:system/lib/libsecril-client.so 
+    device/samsung/gio/prebuilt/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    device/samsung/gio/prebuilt/system/lib/modules/zram.ko:system/lib/modules/zram.ko \
+    device/samsung/gio/prebuilt/system/lib/modules/tun.ko:system/lib/modules/tun.ko \
+    device/samsung/gio/prebuilt/system/lib/modules/cifs.ko:system/lib/modules/cifs.ko 
 
 # Camera/Video    
 PRODUCT_COPY_FILES += \
