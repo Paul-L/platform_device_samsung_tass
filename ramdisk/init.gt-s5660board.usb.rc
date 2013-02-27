@@ -32,4 +32,3 @@ on property:sys.usb.config=rndis,adb
     write /sys/class/usb_composite/rndis/enable 1
     #start adbd
     setprop sys.usb.state $sys.usb.config
-
