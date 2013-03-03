@@ -133,9 +133,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/gio/prebuilt/system/lib/libril.so:system/lib/libril.so \
     device/samsung/gio/prebuilt/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     device/samsung/gio/prebuilt/system/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    device/samsung/gio/prebuilt/system/lib/modules/zram.ko:system/lib/modules/zram.ko \
-    device/samsung/gio/prebuilt/system/lib/modules/tun.ko:system/lib/modules/tun.ko \
-    device/samsung/gio/prebuilt/system/lib/modules/cifs.ko:system/lib/modules/cifs.ko 
+    device/samsung/gio/prebuilt/system/lib/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko 
 
 # Camera/Video    
 PRODUCT_COPY_FILES += \

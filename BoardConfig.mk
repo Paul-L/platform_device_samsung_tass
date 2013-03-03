@@ -67,10 +67,7 @@ ENABLE_JSC_JIT := true
 JS_ENGINE := v8
 BOARD_USE_SCREENCAP:= true
 
-#Old string ->TARGET_KERNEL_SOURCE := kernel/samsung/msm7x27
-#BOARD_MOBILEDATA_INTERFACE_NAME:= "pdp0"
-#New one -> thanks phiexz
-#Now have to test
+# Data config
 BOARD_MOBILEDATA_INTERFACE_NAME = "pdp0"
 
 # FM
@@ -84,9 +81,6 @@ BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x13600000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_PAGE_SIZE := 0x00001000
-
-#TARGET_KERNEL_SOURCE := kernel/samsung/msm7x27
-#TARGET_KERNEL_CONFIG := cyanogenmod_gio_defconfig
 
 # Partitions info
 TARGET_USERIMAGES_USE_EXT4 := true
