@@ -211,7 +211,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera fix
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.device.screenrotation=270
+    ro.device.screenrotation=-90
 
 # Location settings + Performance (check in CMSettings)
 PRODUCT_PROPERTY_OVERRIDES += \
