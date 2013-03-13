@@ -46,6 +46,7 @@ ro.ril.def.agps.feature=1
 ## Wi-Fi interface
 wifi.interface=wlan0
 wifi.ap.interface=athap0
+wifi.supplicant_scan_interval=180
 
 ## Dalvik
 dalvik.vm.lockprof.threshold=500
