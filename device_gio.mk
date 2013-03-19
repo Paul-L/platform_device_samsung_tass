@@ -12,9 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#Build everything needed (languages plus the base)
-$(call inherit-product, build/target/product/languages_full.mk)
-$(call inherit-product, build/target/product/full_base.mk)
+#Build config
+$(call inherit-product, build/target/product/tiny.mk)
 
 #Build GPS files
 $(call inherit-product, device/common/gps/gps_ww_supl.mk)
@@ -34,7 +33,6 @@ PRODUCT_PACKAGES += \
     gralloc.gio \
     gps.gio \
     setup_fs \
-    FM \
     SamsungServiceMode \
     rzscontrol \
     bdaddr_read \
