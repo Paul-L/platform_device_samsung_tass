@@ -15,6 +15,11 @@
 ## Inherit vendor proprietary files
 $(call inherit-product, vendor/samsung/gio/vendor_blobs.mk)
 
+# Using our vendor (Superuser, hosts file and APNS)
+$(call inherit-product, vendor/mmb/vendor_blobs.mk)
+# Including GApps
+$(call inherit-product, vendor/google/gapps_armv6_tiny.mk)
+
 include device/samsung/msm7x27-common/common.mk
 
 ## Device specific overlay
@@ -22,22 +27,23 @@ DEVICE_PACKAGE_OVERLAYS := device/samsung/gio/overlay
 
 ## Camera
 PRODUCT_PACKAGES += \
-    camera.gio
+    camera.msm7x27
 
 ## Audio
 PRODUCT_PACKAGES += \
-   audio.primary.gio \
-   audio_policy.gio
+   audio.primary.msm7x27 \
+   audio_policy.msm7x27
+
+## Lights
+PRODUCT_PACKAGES += \
+   lights.msm7x27
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/gio/ramdisk/init.gt-s5660board.rc:root/init.gt-s5660board.rc \
-    device/samsung/gio/ramdisk/init.gt-s5660board.usb.rc:root/init.gt-s5660board.usb.rc \
-    device/samsung/gio/ramdisk/ueventd.gt-s5660board.rc:root/ueventd.gt-s5660board.rc \
+    device/samsung/msm7x27-common/ramdisk/init.device.rc:root/init.gt-s5660board.rc \
+    device/samsung/msm7x27-common/ramdisk/init.device.usb.rc:root/init.gt-s5660board.usb.rc \
+    device/samsung/msm7x27-common/ramdisk/ueventd.device.rc:root/ueventd.gt-s5660board.rc \
     device/samsung/gio/ramdisk/GIO.rle:root/GIO.rle
-
-#We do call Camera app because it won't be built instead
-PRODUCT_PACKAGES += Camera
 
 ## LDPI assets
 PRODUCT_AAPT_PREF_CONFIG := mdpi
