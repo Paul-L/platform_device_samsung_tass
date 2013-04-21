@@ -20,17 +20,17 @@
 include device/samsung/msm7x27-common/BoardConfigCommon.mk
 
 ## Kernel, bootloader
-TARGET_BOOTLOADER_BOARD_NAME := gio
-TARGET_KERNEL_CONFIG := cyanogenmod_gio_defconfig
+TARGET_BOOTLOADER_BOARD_NAME := tass
+TARGET_KERNEL_CONFIG := cyanogenmod_tass_defconfig
 
 ## Assert
-TARGET_OTA_ASSERT_DEVICE := gio,GT-S5660
+TARGET_OTA_ASSERT_DEVICE := tass,GT-S5570
 
 ## Recovery
 BOARD_LDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/gio/recovery/recovery_ui.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/gio/recovery/graphics.c
-TARGET_RECOVERY_INITRC := device/samsung/gio/recovery/recovery.rc
-TARGET_RECOVERY_FSTAB := device/samsung/gio/recovery/recovery.fstab
-TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/gio/recovery/recovery_kernel
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/tass/recovery/recovery_ui.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/tass/recovery/graphics.c
+TARGET_RECOVERY_INITRC := device/samsung/tass/recovery/recovery.rc
+TARGET_RECOVERY_FSTAB := device/samsung/tass/recovery/recovery.fstab
+TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/tass/recovery/recovery_kernel

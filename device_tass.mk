@@ -13,7 +13,7 @@
 # limitations under the License.
 
 ## Inherit vendor proprietary files
-$(call inherit-product, vendor/samsung/gio/vendor_blobs.mk)
+$(call inherit-product, vendor/samsung/tass/vendor_blobs.mk)
 
 # Using our vendor (Superuser, hosts file and APNS)
 $(call inherit-product, vendor/mmb/vendor_blobs.mk)
@@ -23,7 +23,7 @@ $(call inherit-product, vendor/google/gapps_armv6_tiny.mk)
 include device/samsung/msm7x27-common/common.mk
 
 ## Device specific overlay
-DEVICE_PACKAGE_OVERLAYS := device/samsung/gio/overlay
+DEVICE_PACKAGE_OVERLAYS := device/samsung/tass/overlay
 
 ## Camera
 PRODUCT_PACKAGES += \
@@ -40,10 +40,10 @@ PRODUCT_PACKAGES += \
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/msm7x27-common/ramdisk/init.device.rc:root/init.gt-s5660board.rc \
-    device/samsung/msm7x27-common/ramdisk/init.device.usb.rc:root/init.gt-s5660board.usb.rc \
-    device/samsung/msm7x27-common/ramdisk/ueventd.device.rc:root/ueventd.gt-s5660board.rc \
-    device/samsung/gio/ramdisk/GIO.rle:root/GIO.rle
+    device/samsung/msm7x27-common/ramdisk/init.device.rc:root/init.gt-s5570board.rc \
+    device/samsung/msm7x27-common/ramdisk/init.device.usb.rc:root/init.gt-s5570board.usb.rc \
+    device/samsung/msm7x27-common/ramdisk/ueventd.device.rc:root/ueventd.gt-s5570board.rc \
+    device/samsung/tass/ramdisk/TASS.rle:root/TASS.rle
 
 ## LDPI assets
 PRODUCT_AAPT_PREF_CONFIG := mdpi
